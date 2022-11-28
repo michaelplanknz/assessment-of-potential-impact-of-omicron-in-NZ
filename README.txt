@@ -1,7 +1,10 @@
+This repository contains MATLAB code to reproduce the results in:
+   Vattiato G, Maclaren O, Lustig A, Binny RN, Hendy SC, Plank MJ (2022) An assessment of the potential impact of the Omicron variant of SARS-CoV-2 in Aotearoa New Zealand, Infectious Disease Modelling, Volume 7, Issue 2, Pages 94-105, https://doi.org/10.1016/j.idm.2022.04.002.
+
 README for SimLeaky_Omicron_waning
 
 This folder contains:
-- main.m: the main Matlab run file, contains the different ìscenarioî parameters
+- main.m: the main Matlab run file, contains the different ‚Äúscenario‚Äù parameters
 - getParOmiWane.m: a Matlab function generating the remaining parameters, called by main.m
 - runSimWaning.m: Matlab file that runs the branching process model, called by main.m
 - README.txt: this README
@@ -13,8 +16,8 @@ This folder contains:
 - timeseries: folder where the timeseries for infections, cases, hospitalisations, cumulative deaths, and hospital beds occupied are automatically saved by main
 
 To run:
-1. In the main.m file, change the variable ìsavefolderî, if required, with the name of the folder where the timeseries will be saved. Make sure a folder with that name exists within the timeseries folder
-2. In the main.m file, change the variable ìnRepsî with the number of simulation repetitions required
-3. In the main.m file, change any other parameters as required. If left as it is, the program will run 100 simulation repetitions of the ìbaseline scenarioî described in the paper
+1. In the main.m file, change the variable ‚Äúsavefolder‚Äù, if required, with the name of the folder where the timeseries will be saved. Make sure a folder with that name exists within the timeseries folder
+2. In the main.m file, change the variable ‚ÄúnReps‚Äù with the number of simulation repetitions required
+3. In the main.m file, change any other parameters as required. If left as it is, the program will run 100 simulation repetitions of the ‚Äúbaseline scenario‚Äù described in the paper
 4. Run the main.m file
 5. Results will be saved in the summaries, timeseries and plots folders
